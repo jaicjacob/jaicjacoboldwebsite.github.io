@@ -93,7 +93,7 @@ function TyperSetup() {
     typers[e.id] = new Typer(e);
   }
   elements = document.getElementsByClassName("typer-stop");
-  for (var i = 0, e; e = elements[i++];) {
+  for (var i = 0, e; e = elements[i];) {
     var owner = typers[e.dataset.owner];
     e.onclick = function(){owner.stop();};
   }
